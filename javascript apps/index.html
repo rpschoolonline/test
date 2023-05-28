@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=700px, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      user-select: none;
+      background-color: darkseagreen;
+    }
+
+    #container-parent {
+      display: flex;
+      width: 53%;
+      height: 200px;
+    margin:225px auto;
+    border: 20px solid pink;
+    border-radius: 15px;
+      background-color: palevioletred;
+      flex-wrap: wrap;
+    }
+    
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin:  auto;
+    }
+    #input1,#input2{
+border: none;
+border: 4px solid rgb(247, 36, 13);
+border-radius: 10px;
+padding: 4px;
+color: rgb(26, 26, 37);
+font-weight: 700;
+background-color: antiquewhite;
+    }
+#input-type,#result-type{
+border: none;
+padding: 4px;
+border: 4px solid rgb(116, 162, 248);
+border-radius: 10px;
+color: rgb(109, 26, 109);
+font-weight: 600;
+background-color: cadetblue;
+cursor: pointer;
+}
+#input-type:hover{
+  border: none;
+padding: 4px;
+border: 4px solid rgb(252, 119, 86);
+border-radius: 10px;
+color: rgb(173, 72, 41);
+background-color: rgb(255, 165, 151);
+font-weight: 600;
+transition: 0.8s;
+}
+#result-type:hover{
+  border: none;
+padding: 4px;
+border: 4px solid rgb(252, 119, 86);
+border-radius: 10px;
+color: rgb(173, 72, 41);
+background-color: rgb(255, 165, 151);
+font-weight: 600;
+transition: 0.8s;
+}
+    #clear{
+      margin-left: -58px;
+      margin-bottom: 20px;
+      margin-right: 5px;
+   height: 20px;
+  
+   display: inline;
+   justify-self: flex-end;
+   align-self:flex-end;
+   border: none;
+   border: 2px solid black;
+   background-color: azure;
+   color: brown;
+   border-radius: 10px;
+    }
+    #clear:hover{
+      color: white;
+      background-color: black;
+      border: 2px solid red;
+      cursor: pointer;
+    }
+    span{
+      font-size: 30px;
+      font-weight: 700;
+      color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container-parent">
+    <div id="container">
+      <input style="display: inline;" type="number" id="input1">
+      <select style="display: inline;" name="" id="input-type">
+        <option value="KILOMETER">KILOMETER</option>
+        <option value="METER">METER</option>
+        <option value="CENTIMETER">CENTIMETER</option>
+        <option value="METER/SEC">METER/SEC</option>
+        <option value="KILOMETER/HR">KILOMETER/HR</option>
+        <option value="SECOND">SECOND</option>
+        <option value="MINUTE">MINUTE</option>
+        <option value="LITER">LITER</option>
+        <option value="MILI-LITER">MILI-LITER</option>
+        <option value="KILOGRAM">KILOGRAM</option>
+        <option value="GRAM">GRAM</option>
+      </select>
+      <span>=</span>
+      <input style="display: inline;" type="number" id="input2">
+      <select style="display: inline;" name="" id="result-type">
+        <option value="KILOMETER">KILOMETER</option>
+        <option value="METER">METER</option>
+        <option value="CENTIMETER">CENTIMETER</option>
+        <option value="METER/SEC">METER/SEC</option>
+        <option value="KILOMETER/HR">KILOMETER/HR</option>
+        <option value="SECOND">SECOND</option>
+        <option value="MINUTE">MINUTE</option>
+        <option value="LITER">LITER</option>
+        <option value="MILI-LITER">MILI-LITER</option>
+        <option value="KILOGRAM">KILOGRAM</option>
+        <option value="GRAM">GRAM</option>
+      </select>
+     
+    </div>
+    <button id="clear">CLEAR</button>
+  </div>
+
+  <script src="unitconversion+.js"></script>
+</body>
+
+</html>
+
+<!-- 
+// input1.addEventListener("input",function(){
+  // let input1Value=input1.value
+  // let convert=input1Value*1000
+  // input2.value=convert
+  // })
+  
+  // input2.addEventListener("input",function(){
+  // let input2Value=input2.value
+  // let convert=input2Value/1000
+  // input1.value=convert
+  // }) -->
